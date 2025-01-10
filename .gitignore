@@ -34,3 +34,6 @@
 # Pytorch models
 *.pt
 *.torchscript
+
+# Submodules
+libtorch

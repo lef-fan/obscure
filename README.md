@@ -13,6 +13,10 @@ or if you have already cloned the project without the submodules needed, then:
 ```
 git submodule update --init --recursive
 ```
+Update the submodules (necessary for libtorch library):
+```
+sh update_submodules.sh
+```
 Install required libs for python:
 ```
 pip install -r python/requirements.txt
