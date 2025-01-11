@@ -2,7 +2,7 @@
 Say goodbye to boring camera backgrounds with Obscure!
 
 ## Installation
-Thes fastest way to get the plugin up and running is through the releases:
+Get the latest release: [Download](https://github.com/lef-fan/obscure/releases/latest)
 
 ## Development
 Clone the repo with the required submodules:
