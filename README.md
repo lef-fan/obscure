@@ -21,7 +21,7 @@ Install required libs for python:
 ```
 pip install -r python/requirements.txt
 ```
-Convert the model:
+Convert the targeted model:
 ```
 python python/model_conversion.py
 ```
@@ -32,6 +32,12 @@ cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make
 ```
+This will install the plugin under:
+```
+$ENV{HOME}/.config/obs-studio/plugins
+```
+Open OBS and choose Obscure under camera effect filters.
+
 ## Usage
 ...
 

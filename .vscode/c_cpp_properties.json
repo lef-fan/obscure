@@ -4,6 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
+                "${workspaceFolder}/***",
                 "/usr/include/opencv4",
                 "/opt/cuda/include"
             ],
