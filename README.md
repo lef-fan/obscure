@@ -6,6 +6,7 @@ Install opencv 4.11 \
 Get the latest release (built with opencv 4.11): [Download](https://github.com/lef-fan/obscure/releases/latest)
 
 ## Development
+Install latest opencv. \
 Clone the repo with the required submodules:
 ```
 git clone --recursive git@github.com:lef-fan/obscure.git
