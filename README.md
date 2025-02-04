@@ -2,7 +2,7 @@
 Say goodbye to boring camera backgrounds with Obscure!
 
 ## Installation
-Install opencv. \
+Install opencv 4.11 \
 Get the latest release (built with opencv 4.11): [Download](https://github.com/lef-fan/obscure/releases/latest)
 
 ## Development
