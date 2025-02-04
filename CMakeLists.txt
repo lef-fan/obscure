@@ -68,8 +68,8 @@ add_custom_command(TARGET ${PLUGIN_NAME} POST_BUILD
         "${CMAKE_SOURCE_DIR}/libs/libtorch/lib/libc10.so"
         "${CMAKE_BINARY_DIR}/obscure/bin/64bit/lib/libc10.so"
     COMMAND ${CMAKE_COMMAND} -E copy
-        "${CMAKE_SOURCE_DIR}/libs/libtorch/lib/libcublasLt-44a813aa.so.12"
-        "${CMAKE_BINARY_DIR}/obscure/bin/64bit/lib/libcublasLt-44a813aa.so.12"
+        "${CMAKE_SOURCE_DIR}/libs/libtorch/lib/libcublasLt-a4ddaed1.so.12"
+        "${CMAKE_BINARY_DIR}/obscure/bin/64bit/lib/libcublasLt-a4ddaed1.so.12"
     COMMAND ${CMAKE_COMMAND} -E copy
         "${CMAKE_SOURCE_DIR}/libs/libtorch/lib/libgomp-98b21ff3.so.1"
         "${CMAKE_BINARY_DIR}/obscure/bin/64bit/lib/libgomp-98b21ff3.so.1"
@@ -80,14 +80,14 @@ add_custom_command(TARGET ${PLUGIN_NAME} POST_BUILD
         "${CMAKE_SOURCE_DIR}/libs/libtorch/lib/libc10_cuda.so"
         "${CMAKE_BINARY_DIR}/obscure/bin/64bit/lib/libc10_cuda.so"
     COMMAND ${CMAKE_COMMAND} -E copy
-        "${CMAKE_SOURCE_DIR}/libs/libtorch/lib/libcudart-8774224f.so.12"
-        "${CMAKE_BINARY_DIR}/obscure/bin/64bit/lib/libcudart-8774224f.so.12"
+        "${CMAKE_SOURCE_DIR}/libs/libtorch/lib/libcudart-09529672.so.12"
+        "${CMAKE_BINARY_DIR}/obscure/bin/64bit/lib/libcudart-09529672.so.12"
     COMMAND ${CMAKE_COMMAND} -E copy
         "${CMAKE_SOURCE_DIR}/libs/libtorch/lib/libtorch.so"
         "${CMAKE_BINARY_DIR}/obscure/bin/64bit/lib/libtorch.so"
     COMMAND ${CMAKE_COMMAND} -E copy
-        "${CMAKE_SOURCE_DIR}/libs/libtorch/lib/libcublas-4cc45526.so.12"
-        "${CMAKE_BINARY_DIR}/obscure/bin/64bit/lib/libcublas-4cc45526.so.12"
+        "${CMAKE_SOURCE_DIR}/libs/libtorch/lib/libcublas-d9343511.so.12"
+        "${CMAKE_BINARY_DIR}/obscure/bin/64bit/lib/libcublas-d9343511.so.12"
     COMMAND ${CMAKE_COMMAND} -E copy
         "${CMAKE_SOURCE_DIR}/libs/libtorch/lib/libcudnn.so.9"
         "${CMAKE_BINARY_DIR}/obscure/bin/64bit/lib/libcudnn.so.9"

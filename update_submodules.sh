@@ -1,5 +1,5 @@
 #!/bin/bash
-SUBMODULE_URL="https://download.pytorch.org/libtorch/cu124/libtorch-cxx11-abi-shared-with-deps-2.5.1%2Bcu124.zip"
+SUBMODULE_URL="https://download.pytorch.org/libtorch/cu126/libtorch-cxx11-abi-shared-with-deps-2.6.0%2Bcu126.zip"
 SUBMODULE_ROOTDIR="libs/"
 SUBMODULE_DIR="libs/libtorch"
 

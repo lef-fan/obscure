@@ -168,15 +168,13 @@ static obs_source_frame *obscure_video_render(void *data, obs_source_frame *fram
                 cv::Mat u_plane(frame->height / 2, frame->width / 2, CV_8UC1, frame->data[1], frame->linesize[1]);
                 cv::Mat v_plane(frame->height / 2, frame->width / 2, CV_8UC1, frame->data[2], frame->linesize[2]);
 
-                cv::Mat u_resized, v_resized;
-                cv::resize(u_plane, u_resized, y_plane.size(), 0, 0, cv::INTER_LINEAR);
-                cv::resize(v_plane, v_resized, y_plane.size(), 0, 0, cv::INTER_LINEAR);
+                cv::Mat yuv_image(frame->height * 3 / 2, frame->width, CV_8UC1);
+                
+                y_plane.copyTo(yuv_image(cv::Rect(0, 0, frame->width, frame->height)));
+                u_plane.copyTo(yuv_image(cv::Rect(0, frame->height, frame->width / 2, frame->height / 2)));
+                v_plane.copyTo(yuv_image(cv::Rect(frame->width / 2, frame->height, frame->width / 2, frame->height / 2)));
 
-                std::vector<cv::Mat> yuv_planes = {y_plane, u_resized, v_resized};
-                cv::Mat yuv;
-                cv::merge(yuv_planes, yuv);
-
-                cv::cvtColor(yuv, input_frame, cv::COLOR_YUV2RGB);
+                cv::cvtColor(yuv_image, input_frame, cv::COLOR_YUV2BGR_I420);
             } break;
             default:
                 blog(LOG_ERROR, "Unsupported input format: %d", frame->format);

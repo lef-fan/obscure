@@ -40,3 +40,6 @@ libtorch
 
 # Build
 build
+
+# Vscode
+.vscode/settings.json
