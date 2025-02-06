@@ -5,6 +5,10 @@ Say goodbye to boring camera backgrounds with Obscure!
 Install opencv 4.11 \
 Get the latest release (built with opencv 4.11): [Download](https://github.com/lef-fan/obscure/releases/latest)
 
+(Tested on Arch Linux + NVIDIA GPUs)
+
+More are coming, work in progress...
+
 ## Development
 Install latest opencv. \
 Clone the repo with the required submodules:
